@@ -37,10 +37,7 @@
             transform: translate(-50%, -50%);
             background-color: #ffffff; /* White background */
             padding: 20px;
-            border-top-right-radius: 150px;
-            border-top-left-radius: 450px;
-            border-bottom-left-radius: 230px;
-            border-bottom-right-radius: 590px;
+        
             /* border-radius: 50%; */
             box-shadow: 0 0 20px rgba(57, 56, 56, 0.5);
             text-align: center;
@@ -125,6 +122,9 @@
             text-align: center;
             animation: fadeInAlert 1s ease-out;
             z-index: 4;
+        }
+        .alert-box img{
+            width: 200px;
         }
 
         .alert-message {
@@ -236,7 +236,7 @@
 <div class="alert-overlay" id="alert-overlay"></div>
 
 <div class="alert-box" id="alert-box">
-    <img src="./photos/rose-5974372_1280-removebg-preview.png" alt="Flower" />
+    <img src="./photos/IMG-20240212-WA0004.jpg" alt="Flower" />
     <p class="alert-message" id="alert-message"></p>
     <button class="alert-button" onclick="closeAlert()">Click Here💕</button>
 </div>
@@ -269,14 +269,14 @@
 
             // Set the alert message based on the response
             const alertMessage = response.toLowerCase() === 'yes' ?
-                "Yay! Happy Valentine's Day, sweetheart! ❤️🌹" :
-                "Oh, no worries! You're still amazing. Have a wonderful day! 💖";
+                "Yay! Happy Valentine's Day, Babyy! I LOVE U Im so Happy ❤️🌹" :
+           
 
             document.getElementById('alert-message').innerHTML = alertMessage;
 
             // Show thanks message if response is 'yes'
             if (response.toLowerCase() === 'yes') {
-                document.getElementById('thanks-message').innerHTML = "Thanks for accepting to be my Valentine! 💕";
+                document.getElementById('thanks-message').innerHTML = "Thanks for accepting to be my Valentine Babyy! I'm glad You Said YES . I cant wait to see you soon 💕 I LOVE U";
             }
         }, 500);
     }
